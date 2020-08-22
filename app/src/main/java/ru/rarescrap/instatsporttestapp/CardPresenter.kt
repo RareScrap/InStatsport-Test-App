@@ -1,6 +1,7 @@
 package ru.rarescrap.instatsporttestapp
 
 import android.graphics.drawable.Drawable
+import android.util.DisplayMetrics
 import androidx.leanback.widget.ImageCardView
 import androidx.leanback.widget.Presenter
 import androidx.core.content.ContextCompat
@@ -47,7 +48,7 @@ class CardPresenter : Presenter() {
         if (movie.cardImageUrl != null) {
             cardView.titleText = movie.title
             cardView.contentText = movie.studio
-            cardView.setMainImageDimensions(CARD_WIDTH, CARD_HEIGHT)
+            cardView.setMainImageDimensions(CARD_WIDTH*2, CARD_HEIGHT*2)
             Glide.with(viewHolder.view.context)
                     .load(movie.cardImageUrl)
                     .centerCrop()
