@@ -83,8 +83,6 @@ class MainFragment : BrowseFragment() {
 
         // set fastLane (or headers) background color
         brandColor = ContextCompat.getColor(activity, R.color.fastlane_background)
-        // set search icon color
-        searchAffordanceColor = ContextCompat.getColor(activity, R.color.search_opaque)
     }
 
     private fun loadRows() {
@@ -105,24 +103,10 @@ class MainFragment : BrowseFragment() {
             rowsAdapter.add(ListRow(header, listRowAdapter))
         }
 
-        val gridHeader = HeaderItem(NUM_ROWS.toLong(), "PREFERENCES")
-
-        val mGridPresenter = GridItemPresenter()
-        val gridRowAdapter = ArrayObjectAdapter(mGridPresenter)
-        gridRowAdapter.add(resources.getString(R.string.grid_view))
-        gridRowAdapter.add(getString(R.string.error_fragment))
-        gridRowAdapter.add(resources.getString(R.string.personal_settings))
-        rowsAdapter.add(ListRow(gridHeader, gridRowAdapter))
-
         adapter = rowsAdapter
     }
 
     private fun setupEventListeners() {
-        setOnSearchClickedListener {
-            Toast.makeText(activity, "Implement your own in-app search", Toast.LENGTH_LONG)
-                    .show()
-        }
-
         onItemViewClickedListener = ItemViewClickedListener()
         onItemViewSelectedListener = ItemViewSelectedListener()
     }
@@ -221,7 +205,7 @@ class MainFragment : BrowseFragment() {
         private val BACKGROUND_UPDATE_DELAY = 300
         private val GRID_ITEM_WIDTH = 200
         private val GRID_ITEM_HEIGHT = 200
-        private val NUM_ROWS = 6
+        private val NUM_ROWS = 1
         private val NUM_COLS = 15
     }
 }

@@ -2,12 +2,7 @@ package ru.rarescrap.instatsporttestapp
 
 object MovieList {
     val MOVIE_CATEGORY = arrayOf(
-            "Category Zero",
-            "Category One",
-            "Category Two",
-            "Category Three",
-            "Category Four",
-            "Category Five")
+            "Спортивные матчи")
 
     val list: List<Movie> by lazy {
         setupMovies()
