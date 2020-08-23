@@ -14,4 +14,8 @@ class PlaybackActivity : FragmentActivity() {
                     .commit()
         }
     }
+
+    companion object {
+        const val MOVIE = "Movie"
+    }
 }
