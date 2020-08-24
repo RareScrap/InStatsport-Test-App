@@ -160,6 +160,6 @@ class MainFragment : BrowseFragment() { // TODO: Хотелось бы испо�
 
         private val BACKGROUND_UPDATE_DELAY = 300
         private val NUM_ROWS = 1
-        private val NUM_COLS = 15
+        private val NUM_COLS = 5
     }
 }

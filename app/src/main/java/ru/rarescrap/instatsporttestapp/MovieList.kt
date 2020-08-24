@@ -11,11 +11,11 @@ object MovieList {
 
     private fun setupMovies(): List<Movie> {
         val title = arrayOf(
-                "Zeitgeist 2010_ Year in Review",
-                "Google Demo Slam_ 20ft Search",
-                "Introducing Gmail Blue",
-                "Introducing Google Fiber to the Pole",
-                "Introducing Google Nose")
+                "Бразилия — Германия 1:7 |Чемпионат мира",
+                "Манчестер Сити» 3-2 «КПР» | Премьер Лига",
+                "«Барселона» 5-0 «Реал» | Ла Лига",
+                "«Барселона» 6-1 «ПСЖ» | Лига Чемпионов",
+                "Реал» 2-3 «Барселона» | Ла Лига")
 
         val description = "Fusce id nisi turpis. Praesent viverra bibendum semper. " +
                 "Donec tristique, orci sed semper lacinia, quam erat rhoncus massa, non congue tellus est " +
@@ -24,11 +24,11 @@ object MovieList {
                 "facilisis mattis. Ut aliquet luctus lacus. Phasellus nec commodo erat. Praesent tempus id " +
                 "lectus ac scelerisque. Maecenas pretium cursus lectus id volutpat."
         val studio = arrayOf(
-                "Studio Zero",
-                "Studio One",
-                "Studio Two",
-                "Studio Three",
-                "Studio Four")
+                "8 июля 2014 г.",
+                "13 мая 2012 г.",
+                "29 ноября 2010 г.",
+                "8 марта 2017 г.",
+                "23 апреля 2017 г.")
         val videoUrl = arrayOf(
                 "http://commondatastorage.googleapis.com/android-tv/Sample%20videos/Zeitgeist/Zeitgeist%202010_%20Year%20in%20Review.mp4",
                 "http://commondatastorage.googleapis.com/android-tv/Sample%20videos/Demo%20Slam/Google%20Demo%20Slam_%2020ft%20Search.mp4",
